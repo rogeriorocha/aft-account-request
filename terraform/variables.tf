@@ -10,13 +10,13 @@ variable "account_email" {
 variable "account_name" {
     description = "Name of the new account"
     type        = string
-    default     = "AFTSandboxAccount"
+    default     = "sandbox-aft"
 }
 
 variable "managed_organizational_unit" {
     description = "The name of the OU where the new account will be created followed by ({{OU ID}}) eg `Sandbox (ou-1234567890abcdef0)`"
     type        = string
-    default     = "Sandbox (ou-u992-8yqza91j)"
+    default     = "Sandbox"
 }
 
 variable "sso_user_email" {

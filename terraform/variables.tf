@@ -4,10 +4,13 @@ variable "account_email" {
     default = "onoureldin+aftsandbox@gmail.com"
 }
 
+# Double-check and make sure your entry is correct. 
+# Make sure the AccountName does not contain space and special character. 
+# The supported character are `[a-zA-Z0-9][a-zA-Z0-9._-]
 variable "account_name" {
     description = "Name of the new account"
     type        = string
-    default     = "AFT Sandbox Account"
+    default     = "AFTSandboxAccount"
 }
 
 variable "managed_organizational_unit" {

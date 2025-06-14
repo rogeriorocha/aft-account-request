@@ -7,7 +7,7 @@
 # You should see the pipeline completed successfully and your latest commit message.
 ######################################################################################
 
-module "account_request_01" {
+module "account_request_sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {

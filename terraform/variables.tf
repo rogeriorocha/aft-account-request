@@ -16,7 +16,7 @@ variable "account_name" {
 variable "managed_organizational_unit" {
     description = "The name of the OU where the new account will be created"
     type        = string
-    default     = "usermanagement"
+    default     = "Sandbox"
 }
 
 variable "sso_user_email" {

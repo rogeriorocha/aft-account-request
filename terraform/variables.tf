@@ -14,7 +14,7 @@ variable "account_name" {
 }
 
 variable "managed_organizational_unit" {
-    description = "The name of the OU where the new account will be created followed by ({{OU ID}})"
+    description = "The name of the OU where the new account will be created followed by ({{OU ID}}) eg `Sandbox (ou-1234567890abcdef0)`"
     type        = string
     default     = "Sandbox (ou-u992-8yqza91j)"
 }

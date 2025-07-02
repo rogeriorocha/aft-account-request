@@ -26,17 +26,17 @@ locals {
       }
       customizations_name = "PRODUCTION"
     }
-    platform = {
-      name              = "Platform Account"
-      organization_unit = "Platform"
-      email             = local.email_secrets["platform_account_email"]
+    development = {
+      name              = "Development Account"
+      organization_unit = "Product"
+      email             = local.email_secrets["development_account_email"]
       sso_email         = local.sso_user_email
-      first_name        = "Plarform"
+      first_name        = "Development"
       last_name         = "User"
       tags = {
-        "ABC:Environment" = "PLATFORM"
+        "ABC:Environment" = "DEVELOPMENT"
       }
-      customizations_name = "PLATFORM"
+      customizations_name = "DEVELOPMENT"
     }
 
 

@@ -4,7 +4,7 @@ Sample repository and customization for AWS Control Tower Account Factory for Te
 
 This repository is part of AFT lab. For detailed walkthrough, please check the lab in [AWS Control Tower Workshop](https://catalog.workshops.aws/control-tower/en-US/customization/aft).
 
-## How to use 
+## How to use
 
 There are four repository, to help you get started:
 - [aft-sample-account-provisioning-customizations](https://github.com/aws-samples/aft-sample-account-provisioning-customizations)
@@ -16,10 +16,10 @@ Refer to instruction on [AWS Control Tower Workshop](https://catalog.workshops.a
 
 ## How to use
 
-This is sample repository for `aft-account-request`. 
+This is sample repository for `aft-account-request`.
 
 For the labs in the workshop we deploy AFT using GitHub as our vcs provider.
-- Open the `aft-sample-account-request` in your browser 
+- Open the `aft-sample-account-request` in your browser
  - Click on the **Fork** button,
  - Edit the name of repository to be `aft-account-request`.
  - Ensure **Copy the main branch only** is checked.
@@ -40,7 +40,7 @@ It is an AWS best practice to have multiple environments for workloads/applicati
 
 Will you use separate branches and merge requests to promote changes between environments?
 
-or 
+or
 
 Will you have non-production repositories forked from your production ones and use a pull request approach?
 

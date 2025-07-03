@@ -17,6 +17,8 @@ locals {
       }
       customizations_name = "SECURITY"
     }
+
+
     logging = {
       name              = "Logging Account"
       organization_unit = "Security"
@@ -64,6 +66,14 @@ locals {
         "ABC:Environment" = "PROD"
       }
       customizations_name = "PRODUCTION"
+      alternate_contact = {
+        head_of_product = {
+          "email-address" = local.email_secrets["head_of_product_ou_email"]
+          "name"          = "Head of Product"
+          "phone-number"  = "+11234567890"
+          "title"         = "Head of Product"
+        }
+      }
     }
     development = {
       name              = "Development Account"
@@ -76,6 +86,14 @@ locals {
         "ABC:Environment" = "DEVELOPMENT"
       }
       customizations_name = "DEVELOPMENT"
+      alternate_contact = {
+        head_of_product = {
+          "email-address" = local.email_secrets["head_of_product_ou_email"]
+          "name"          = "Head of Product"
+          "phone-number"  = "+11234567890"
+          "title"         = "Head of Product"
+        }
+      }
     }
     staging = {
       name              = "Staging Account"
@@ -88,7 +106,14 @@ locals {
         "ABC:Environment" = "STAGING"
       }
       customizations_name = "STAGING"
+      alternate_contact = {
+        head_of_product = {
+          "email-address" = local.email_secrets["head_of_product_ou_email"]
+          "name"          = "Head of Product"
+          "phone-number"  = "+11234567890"
+          "title"         = "Head of Product"
+        }
+      }
     }
-
   }
 }

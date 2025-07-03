@@ -1,14 +1,5 @@
 ## Auto generated providers.tf ##
 ## Updated on: {{ timestamp }} ##
-
-data "aws_secretsmanager_secret" "aft_account_secrets" {
-  name = "aft-account-secrets"
-}
-
-data "aws_secretsmanager_secret_version" "aft_account_secrets_versions" {
-  secret_id = data.aws_secretsmanager_secret.aft_account_secrets.id
-}
-
 provider "aws" {
   region = "{{ provider_region }}"
   assume_role {

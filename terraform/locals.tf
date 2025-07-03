@@ -67,7 +67,7 @@ locals {
       }
       customizations_name = "PRODUCTION"
       alternate_contact = {
-        head_of_product = {
+        operations = {
           "email-address" = local.email_secrets["head_of_product_ou_email"]
           "name"          = "Head of Product"
           "phone-number"  = "+11234567890"
@@ -87,7 +87,7 @@ locals {
       }
       customizations_name = "DEVELOPMENT"
       alternate_contact = {
-        head_of_product = {
+        operations = {
           "email-address" = local.email_secrets["head_of_product_ou_email"]
           "name"          = "Head of Product"
           "phone-number"  = "+11234567890"
@@ -107,7 +107,7 @@ locals {
       }
       customizations_name = "STAGING"
       alternate_contact = {
-        head_of_product = {
+        operations = {
           "email-address" = local.email_secrets["head_of_product_ou_email"]
           "name"          = "Head of Product"
           "phone-number"  = "+11234567890"

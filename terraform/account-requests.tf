@@ -20,10 +20,16 @@ module "account_requests" {
     change_reason       = "Automated multi-account provisioning"
   }
 
-  custom_fields = {
-    custom1 = "a"
-    custom2 = "b"
-  }
+  custom_fields = merge(
+    {
+      custom1 = "a"
+      custom2 = "b"
+    },
+    each.value.alternate_contact != null ? {
+      alternate_contact = jsonencode(each.value.alternate_contact)
+    } : {}
+  )
+
 
   account_customizations_name = each.value.customizations_name
 }

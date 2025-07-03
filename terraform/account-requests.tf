@@ -22,12 +22,15 @@ module "account_requests" {
 
   custom_fields = merge(
     {
-      custom1 = "a"
-      custom2 = "b"
+      another_custom_field1 = "a"
+      another_custom_field2 = "b"
     },
-    each.value.alternate_contact != null ? {
-      alternate_contact = jsonencode(each.value.alternate_contact)
-    } : {}
+    try(
+      {
+        alternate_contact = jsonencode(each.value.alternate_contact)
+      },
+      {}
+    )
   )
 
 

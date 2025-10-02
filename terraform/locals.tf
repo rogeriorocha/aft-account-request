@@ -12,26 +12,7 @@ locals {
     # PRODUCT OU
     ##################################################################
 
-    development = {
-      name              = "Development Account"
-      organization_unit = "Product"
-      email             = local.email_secrets["development_account_email"]
-      sso_email         = local.sso_user_email
-      first_name        = "Development"
-      last_name         = "User"
-      tags = {
-        "ABC:Environment" = "DEVELOPMENT"
-      }
-      customizations_name = "DEVELOPMENT"
-      alternate_contact = {
-        operations = {
-          "email-address" = local.email_secrets["head_of_product_ou_email"]
-          "name"          = "Head of Product"
-          "phone-number"  = "+11234567890"
-          "title"         = "Head of Product"
-        }
-      }
-    }
+
     staging = {
       name              = "Staging Account"
       organization_unit = "Product"

@@ -6,18 +6,7 @@ locals {
     # OPS OU
     ##################################################################
 
-    ops = {
-      name              = "Ops Account"
-      organization_unit = "Ops"
-      email             = local.email_secrets["ops_account_email"]
-      sso_email         = local.sso_user_email
-      first_name        = "Ops"
-      last_name         = "User"
-      tags = {
-        "ABC:Environment" = "OPS"
-      }
-      customizations_name = "OPS"
-    }
+
 
     ##################################################################
     # PRODUCT OU

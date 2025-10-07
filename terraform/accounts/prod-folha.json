@@ -1,0 +1,11 @@
+{
+  "account_name": "prod-folha",
+  "account_email": "prod-folha@leguedex.com",
+  "organizational_unit_name": "Sandbox",
+  "sso_user_email": "prod-folha@leguedex.com",
+  "sso_user_first_name": "prod-folha",
+  "sso_user_last_name": "User",
+  "custom_fields": {
+    "request_id": "folha"
+  }
+}

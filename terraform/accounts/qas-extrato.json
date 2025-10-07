@@ -1,0 +1,11 @@
+{
+  "account_name": "qas-extrato",
+  "account_email": "qas-extrato@leguedex.com",
+  "organizational_unit_name": "Sandbox",
+  "sso_user_email": "qas-extrato@leguedex.com",
+  "sso_user_first_name": "qas-extrato",
+  "sso_user_last_name": "User",
+  "custom_fields": {
+    "request_id": "extrato"
+  }
+}

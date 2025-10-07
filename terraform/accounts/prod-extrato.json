@@ -1,0 +1,11 @@
+{
+  "account_name": "prod-extrato",
+  "account_email": "prod-extrato@leguedex.com",
+  "organizational_unit_name": "Sandbox",
+  "sso_user_email": "prod-extrato@leguedex.com",
+  "sso_user_first_name": "prod-extrato",
+  "sso_user_last_name": "User",
+  "custom_fields": {
+    "request_id": "extrato"
+  }
+}

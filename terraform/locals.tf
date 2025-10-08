@@ -32,6 +32,28 @@ locals {
           "title"         = "Head of Product"
         }
       }
+    },
+
+    staging2 = {
+      name              = "staging2"
+      organization_unit = "Product"
+      email             = "staging2@leguedex.com"
+      sso_email         = "staging2@leguedex.com"
+      first_name        = "staging2"
+      last_name         = "User"
+      tags = {
+        "ABC:Environment" = "STAGING"
+      }
+      customizations_name = "STAGING"
+      alternate_contact = {
+        operations = {
+          "email-address" = "staging2@leguedex.com"
+          "name"          = "Head of Product"
+          "phone-number"  = "+11234567890"
+          "title"         = "Head of Product"
+        }
+      }
     }
+
   }
 }
